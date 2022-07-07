@@ -163,7 +163,24 @@ padding-right: 0
 	position: absolute;
 	width: 100%;
   }
-.subrayado-rojo div:after {
+
+  .subrayado-rojo :hover:after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: rgba(20, 201, 192, 0.562);
+    content: '';
+    display: block;
+    height: 0.08rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    }
+
+
+.subrayado-rojo :after {
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -177,20 +194,7 @@ padding-right: 0
 	position: absolute;
 	width: 0;
   }
-  .subrayado-rojo div:hover:after {
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-	background: rgba(223, 186, 232, 0.562);
-	content: '';
-	display: block;
-	height: 0.08rem;
-	left: 0;
-	position: absolute;
-	width: 100%;
-  }
+
 
 .negrita {font-weight: 700;}
 
@@ -372,6 +376,48 @@ main div.menu-nav-info ul li {
   }
 
 
+
+  .boton-directo div:after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: rgb(155, 155, 155);
+    content: '';
+    display: block;
+    height: 0.05rem;
+    left: 0;
+    position: absolute;
+    width: 0;
+    }
+  .boton-directo div:hover {
+    cursor: pointer;
+    }
+  
+  .boton-directo div:after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: rgb(155, 155, 155);
+    content: '';
+    display: block;
+    height: 0.05rem;
+    left: 0;
+    position: absolute;
+    width: 0;
+    }
+  .boton-directo div:hover {
+    cursor: pointer;
+    }
+
+
+
+
+
+
 .centrar-videos {justify-content: center;}
 
 
@@ -385,14 +431,30 @@ main div.menu-nav-info ul li {
       }
 
 
-
+      .hover-transition div:hover:after {
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        background: rgba(243, 114, 185, 0.562);
+        content: '';
+        display: block;
+        height: 0.08rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+        }
+    
+    
 
 
 
 
   @media (min-width: 700px) and (orientation: landscape){
 
-
+                                                                   
                                                                     .hover-transition{transition: filter .7s;
                                                                         cursor: pointer;}
                                                                     .hover-transition:hover{filter: brightness(50%);
@@ -407,6 +469,38 @@ main div.menu-nav-info ul li {
                                                                             cursor: pointer;}
                                                                     .hover-transition-byn:hover{filter: grayscale(0%);
                                                                     } 	
+                                                                    .hover-transition :hover:after {
+                                                                      -webkit-transition: all 0.5s;
+                                                                      -moz-transition: all 0.5s;
+                                                                      -ms-transition: all 0.5s;
+                                                                      -o-transition: all 0.5s;
+                                                                      transition: all 0.5s;
+                                                                      background: rgba(20, 201, 192, 0.562);
+                                                                      content: '';
+                                                                      display: block;
+                                                                      height: 0.08rem;
+                                                                      left: 0;
+                                                                      position: absolute;
+                                                                      width: 100%;
+                                                                      }
+                                                                  
+                                                                  
+                                                                  .hover-transition :after {
+                                                                    -webkit-transition: all 0.5s;
+                                                                    -moz-transition: all 0.5s;
+                                                                    -ms-transition: all 0.5s;
+                                                                    -o-transition: all 0.5s;
+                                                                    transition: all 0.5s;
+                                                                    background: rgb(155, 155, 155);
+                                                                    content: '';
+                                                                    display: block;
+                                                                    height: 0.05rem;
+                                                                    left: 0;
+                                                                    position: absolute;
+                                                                    width: 0;
+                                                                    }
+
+
                                                                     main div.menu-tipo, main  {font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
                                                                         font-size: 1rem;
                                                                         font-weight: 400;
@@ -422,3 +516,11 @@ main div.menu-nav-info ul li {
                                                                                 width: 90%;
                                                                                 height: 40vh;}   
                                                         }           
+
+
+
+                               @media (max-width: 600px) {
+                                                          .firma {
+                                                            width: 20em;
+                                                          }
+                                                        }                                                       
