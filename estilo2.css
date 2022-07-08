@@ -546,7 +546,9 @@ main div.menu-nav-info ul li {
 
 
 .footer{position: absolute;
-        top:95%
+        top:95%;
+        color:#474747;
+        
     
       }
 
